@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Toilet Talk</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Steven Harmon">
+        <meta name="description" content="Toilet Talk">
+        <meta name="keywords" content="Steven Harmon, toilets, talk, GDC, Lost Levels, Dreamhack, Activision, speaker, confereces, events, CIGDA">
+        <meta name="viewport" content="width=device-width-,initial-scale=1">
+        
+        <link rel="stylesheet" type = "text/css" href="mainStyle.css">
+		<style>
+			h1{
+				font-family: 'Source Serif Pro', serif;
+				font-size: 80px;
+				font-weight: normal;
+				color: #212121;
+				min-width: 165px;
+                margin-top: 0px;
+                padding-top: 70px;
+				margin-bottom:0px;
+                text-align: center;
+			}
+			h2{
+				font-family: 'Source Serif Pro', serif;
+				font-size: 22px;
+				font-weight: normal;
+				color: white;
+				position: absolute;
+				top: -7px;
+				left: 3%;
+			}
+            .toiletemoji{
+                font-family: 'Source Serif Pro', serif;
+				font-size: 22px;
+				font-weight: normal;
+				color: white;
+				position: absolute;
+				top: 11px;
+				left: 3%;
+            }
+			#head_banner{
+				background-image: url("imgs/toiletbanner2.png");
+				height: 250px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+				margin: 0px;
+			}
+			#content_bdy{
+				padding-top:15px;
+				position: relative; 
+                width: 786px;
+				margin: auto;
+			}
+			.bdysubtxt{
+				color: DimGray;
+				font-size: 20px;
+			}
+            .column{
+                  float: left;
+            }
+            .column_left{
+                float: left;
+                width: 300px;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .column_left p{
+                margin-top:5px;
+                margin-bottom: 0px;
+            }
+            .column_right{
+                float: left;
+                width: 470px;
+                margin-left: 10px;
+                margin-right: 0px;
+            }
+            .column3_left {
+                float: left;
+                width: 250px;
+                margin-top:8px;
+            }
+            .column3_right {
+                float: left;
+                width: 250px;
+                margin-left: 15px;
+                margin-top:8px;
+            }
+            .clearfloat{
+                clear: both;
+            }
+            .overlay {
+                background-color: rgba(95,158,160,0.6);
+                color: white;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                padding: 0px 2px;
+                text-align: center;
+                padding-top: 0px;
+                visibility: hidden;
+            }
+            #img_gdc{}
+            #img_dre{}
+            #img_cig{}
+            #img_cig2{}
+            #img_atvi{margin-top: 8px;}
+            #img_gdc .overlay{
+                height: 250px;
+                width: 246px;
+                top: 175px;
+            }
+            #img_gdc p{
+                padding-top: 85px;
+                font-size: 25px;
+            }
+            #img_gdc:hover .overlay{
+                visibility: visible;
+            }
+            #img_dre .overlay {
+                left: 265px;
+                height: 250px;
+                width: 246px;
+                top: 175px;
+		    }
+            #img_dre p{
+                padding-top: 85px;
+                font-size: 25px;
+            }
+            #img_dre:hover .overlay{
+                visibility: visible;
+            }
+            #img_cig .overlay{
+                left: 530px;
+                height: 250px;
+                width: 246px;
+                top: 175px;
+            }
+            #img_cig p{
+                padding-top: 85px;
+                font-size: 25px;
+            }
+            #img_cig:hover .overlay{
+                visibility: visible;
+            }
+            #img_cig2 .overlay{
+                left: 310px;
+                height: 146px;
+                width: 466px;
+                top: 15px;
+            }
+            #img_cig2 p{
+                padding-top: 10px;
+                font-size: 25px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            #img_cig2:hover .overlay{
+                visibility: visible;
+            }
+            #img_atvi .overlay{
+                height: 331px;
+                width: 776px;
+                top: 441px;
+            }
+            #img_atvi p{
+                padding-top: 110px;
+                font-size: 25px;
+            }
+            #img_atvi:hover .overlay{
+                visibility: visible;
+            }
+            footer{
+				position: relative;
+				margin-left: 50px;
+                margin-right: 50px;
+				min-width: 350px;
+                max-width: 1920px;
+				text-align: center;
+				margin-top: 50px;
+			}
+            @media(max-width:800px){
+                #header h2{
+                    visibility: hidden;
+                }
+                .toiletemoji{
+                    visibility: visible;
+                }
+                #content_bdy{
+                    margin-left: 5%;
+                    float: none;
+                    width: 100%;
+                }
+                .column_left{
+                    float: none;
+                    width: 90%;
+                    margin-left: 0px;
+                    margin-right: 5%;
+                    margin-bottom: 8px;
+                }
+                .column_right{
+                    float: none;
+                    width: 94%;
+                    margin-left: 0px;
+                    margin-right: 5%;
+                    margin-bottom: 0px;
+                }
+                .column_right img{
+                    width: 100%; 
+                }
+                #img_cig2 .overlay{
+                    visibility: visible;
+                    position: relative;
+                    width: 99.4%;
+                    height: 55px;
+                    left:0px;
+                    top: auto;
+                }
+                #img_cig2 p{
+                    padding-top: 18px;
+                    font-size: 14.5px;
+                    margin:0px;
+                }
+                #img_gdc .overlay{
+                    visibility: visible;
+                    position: relative;
+                    width: 98%;
+                    height: 55px;
+                    left:0px;
+                    top: auto;
+                }
+                #img_gdc p{
+                    padding-top: 18px;
+                    font-size: 14.5px;
+                    margin:0px;
+                }
+                #img_dre .overlay{
+                    visibility: visible;
+                    position: relative;
+                    width: 98%;
+                    height: 55px;
+                    left:0px;
+                    top: 8px;
+                }
+                #img_dre p{
+                    padding-top: 18px;
+                    font-size: 14.5px;
+                    margin:0px;
+                }
+                #img_cig .overlay{
+                    visibility: visible;
+                    position: relative;
+                    width: 98%;
+                    height: 55px;
+                    left:0px;
+                    top: 8px;
+                }
+                #img_cig p{
+                    padding-top: 18px;
+                    font-size: 14.5px;
+                    margin:0px;
+                }
+                #img_atvi .overlay{
+                    visibility: visible;
+                    position: relative;
+                    width: 93.4%;
+                    height: 70px;
+                    left:0px;
+                    top: auto;
+                }
+                #img_atvi p{
+                    padding-top: 18px;
+                    font-size: 14.5px;
+                    margin:0px;
+                }
+                .column3_left {
+                    float: left;
+                    width: 30%;
+                    margin-top:8px;
+                }
+                .column3_right {
+                    float: left;
+                    width: 30%;
+                    margin-left: 1.9%;
+                    margin-top: 0px;
+                }
+                .column3_left img {
+                    float: left;
+                    width: 100%;
+                    margin-top:0px;
+                }
+                .column3_right img{
+                    float: left;
+                    width: 100%;
+                    margin-left: 0px;
+                    margin-top: 8px;
+                }
+                #img_atvi{margin-top: 15px;}
+                #img_atvi img{
+                    width: 94%;
+                }
+                .overlay .a_link a:link{
+                    color: white;
+                    font-size: 15px;
+                }
+            }
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="toiletemoji">🚽</div>
+			<h2>&nbsp; &nbsp; &nbsp; Toilet Game Studies</h2>
+			<ul>
+				<li><a href="toilet_hub.html">Toilet Hub</a></li>
+				<li><a href="toilet_talk.html">Toilet Talk</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</div>
+		<div id="head_banner">
+			<h1>Toilet Talk</h1>
+		</div>
+		<div id="content_bdy">
+            <div class="column_left">
+                <p>Part of our initiative to spread the word about toilet representation in this medium is to speak at games events and writers conferences around the nation. Want toilet talks in your area? Or via an online panel? <span class="a_link"><a href="contact.html">Book ToiletGameStudies!</a></span></p>
+            </div>
+            <div class="column_right">
+                <div id="img_cig2">
+                    <div class="overlay">
+                        <p>Colorado Independent Game Developers Winter Party 2017</p>
+                    </div>
+                    <img src="imgs/cigda_party2.jpg" title="CIGDA_party2" alt="Colorado Independent Game Developers Party 2017" width="470">
+                </div>
+            </div>
+            <div class="column">
+                <div class="column3_left">
+                    <div id="img_gdc">
+                        <div class="overlay">
+                            <p>GDC Lost Levels</p>
+                        </div>
+                        <img src="imgs/gdc_lost_levels.jpg" title="GDC_lostlevels" alt="GDC Lost Levels" width="250">
+                    </div>                    
+                </div>
+                <div class="column3_right">
+                    <div id="img_dre">
+                        <div class="overlay">
+                            <p>Dreamhack Austin</p>
+                        </div>
+                        <img src="imgs/dreamhack_austin.jpg" title="Dreamhack_Austin" alt="Dreamhack Austin" width="250">
+                    </div>
+                </div>
+                <div class="column3_right">
+                    <div id="img_cig">
+                        <div class="overlay">
+                            <p>CIGDA Party 2018</p>
+                        </div>
+                        <img src="imgs/cigda_party.jpg" title="CIGDA_party" alt="Colorado Indpendent Game Developers Winter Party 2018" width="250">
+                    </div>
+                </div>
+            </div>
+			<div class="clearfloat"></div>
+            <div class="column">
+                <div id="img_atvi">
+                    <div class="overlay">
+                        <p>Activision Summer Spearker Series 2020<br><span class="a_link"><a href="talk.html" target="_blank">Watch</a></span></p>                        
+                    </div>
+                    <img src="imgs/atvi_speaker_series2020.png" title="ATVI_Speaker" alt="Activision Summer Speaker Series 2020" width="780">
+                </div>
+            </div>
+            <div class="clearfloat"></div>
+		</div>
+        <div class="clearfloat"></div>
+        <footer>
+            <p>©2020 Toilet Game Studies Copyright for articles published in this journal is retained by the journal, except for the authors' right to republish wherever they may choose. By virtue of their appearance in this open access journal, articles are free to use, with proper attribution, in educational and other non-commercial settings.</p>
+        </footer>
+	<body>
+</html>

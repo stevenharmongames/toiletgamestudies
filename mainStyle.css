@@ -1,0 +1,69 @@
+/* mainStyle.css */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: SlateGray;
+    color: white;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #212121;
+}
+li {
+    position:relative; 
+    float: right;
+    right: 3%;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover {
+    color: CadetBlue;
+}
+dd{
+    margin-bottom: 15px;
+}
+.a_link a:link{
+    color: CadetBlue;
+}
+.a_link a:hover{
+    color: DarkCyan;
+}
+.toiletemoji{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    top: 11px;
+    left: 3%;
+}
+.clearfloat{
+    clear: both;
+}
+footer{
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width: 350px;
+    max-width: 1920px;
+    text-align: center;
+    margin-top: 50px;
+}

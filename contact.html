@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <title>Contact</title>
+            <meta charset="utf-8">
+            <meta name="author" content="Steven Harmon">
+            <meta name="description" content="Toilet Game Studies Contact Form">
+            <meta name="keywords" content="toilet game studies contact, contact, form, email, donate">
+            <meta name="viewport" content="width=device-width-,initial-scale=1">
+            
+            <link rel="stylesheet" type = "text/css" href="mainStyle.css">
+        
+            <style>
+                h1{
+                    font-family: 'Source Serif Pro', serif;
+                    font-size: 80px;
+                    font-weight: normal;
+                    color: floralwhite;
+                    min-width: 165px;
+                    margin-top: 0px;
+                    padding-top: 82px;
+                    margin-bottom:0px;
+                    text-align: center;
+                    line-height: 1;
+                }
+                h2{
+                    font-family: 'Source Serif Pro', serif;
+                    font-size: 22px;
+                    font-weight: normal;
+                    color: white;
+                    position: absolute;
+                    top: -7px;
+                    left: 3%;
+                }
+                #head_banner{
+                    background-image: url("imgs/toiletbanner3.png");
+                    height: 250px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+                    margin: 0px;
+                }
+                #head_banner p{
+                    color: floralwhite;
+                    text-align: center;
+                    margin: 0px;
+                }
+                #content_bdy{
+                    padding-top:15px;
+                    position: relative; 
+                    width: 786px;
+                    margin: auto;
+                }
+                .centertxt{
+                    text-align: center;
+                    font-size: 20px;
+                }
+                .bdysubtxt{
+                    color: DimGray;
+                    font-size: 20px;
+                }
+                .column{
+                    float: left;
+                }
+                .contact-form{
+                    width:80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                form{
+                    margin-top: 25px;
+                }
+                .form-nom{
+                    width: 380px;
+                    outline-color: darkcyan;
+                    font-size: 20px;
+                    margin-bottom: 16px;
+                }
+                .form-subj{
+                    width: 99.5%;
+                    outline-color: darkcyan;
+                    font-size: 20px;
+                    margin-bottom: 16px;
+                }
+                .form-msg{
+                    width: 100%;
+                    outline-color: darkcyan;
+                    font-size: 20px;
+                    margin-bottom: 12px;
+                    min-height: 175px
+                }
+                .form-sub{
+                    float:right;
+                    width: 125px;
+                    height: 35px;
+                    color: white;
+                    font-weight: bold;
+                    background-color: dimgrey;
+                    border-radius: 2px;
+                }
+                .form-sub:hover{
+                    color: white;
+                    font-weight: bold;
+                    background-color: slategrey;
+                    border-radius: 2px;
+                    cursor: pointer;
+                }
+                #content_bdy p{
+                    margin-right: 25px;
+                    margin-left: 25px;
+                }
+                @media(max-width:800px){
+                    #header h2{
+                        visibility: hidden;
+                    }
+                    .toiletemoji{
+                        visibility: visible;
+                    }
+                    #content_bdy{
+                        margin-left: 5%;
+                        float: none;
+                        width: 100%;
+                    }
+                    #content_bdy p{
+                        margin-left: 1%;
+                        margin-right: 45px;
+                    }
+                    .contact-form{
+                        width:87%;
+                        margin-left: 1%;
+                        margin-right: 1%;
+                    }
+                }
+            </style>
+      </head>
+      <body>
+      <div id="header">
+			<div class="toiletemoji">🚽</div>
+			<h2>&nbsp; &nbsp; &nbsp; Toilet Game Studies</h2>
+			<ul>
+				<li><a href="toilet_hub.html">Toilet Hub</a></li>
+				<li><a href="toilet_talk.html">Toilet Talk</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</div>
+		<div id="head_banner">
+			<h1>Contact</h1>
+		</div>
+		<div id="content_bdy">
+            <p>If you'd like to submit a proposal for your video game toilet article, apply to be on the editorial board, refer us to outside game toilet literature, or book us for a panel or talk please drop us a line below.</p>
+            <div class="clearfloat"></div>
+            <div class="contact-form">
+                <form id="contact-form" method="POST" action="contact_handler.php">
+                    <input name="name" type="text" class="form-nom" placeholder="Your Name" required>
+                    <div class="clearfloat"></div> 
+                    <input name="email" type="email" class="form-nom" placeholder="Your Email" required>
+                    <div class="clearfloat"></div>
+                    <input name="subject" type="text" class="form-subj" placeholder="Subject" required>
+                    <div class="clearfloat"></div>
+                    <textarea name="message" class="form-msg" placeholder="Message" required></textarea>
+                    <div class="clearfloat"></div>
+                    <input type="submit" class="form-sub" value="submit">
+                </form>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+        <footer>
+            <p>©2020 Toilet Game Studies Copyright for articles published in this journal is retained by the journal, except for the authors' right to republish wherever they may choose. By virtue of their appearance in this open access journal, articles are free to use, with proper attribution, in educational and other non-commercial settings.</p>
+        </footer>
+     </body>
+</html>

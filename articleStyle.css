@@ -1,0 +1,189 @@
+/* articleStyle.css */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: SlateGray;
+    color: white;
+    text-align: center;
+}
+dl {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: white;
+    color: DimGrey;
+}
+dt {
+	position:relative; 
+    float: right;
+	right: 3%;
+    color: DimGrey;
+}
+dt a {
+	display: block;
+	color: DimGrey;
+	text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+dt a:hover {
+    color: black;
+}
+.a_link a:link{
+    color: CadetBlue;
+}
+.a_link a:hover{
+	color: DarkCyan;
+}
+h1{
+    font-family: 'Source Serif Pro', serif;
+	font-size: 65px;
+    font-weight: normal;
+    color: #37474F;
+	margin-top: 25px;
+    margin-bottom:0px;
+}
+h2{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: black;
+    position: absolute;
+    top: -7px;
+    left: 3%;
+}
+h3{
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    color:CadetBlue;
+}
+h4{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-style: italic;
+    color: SlateGray;				
+}
+.cont_vid{
+	float: left;
+	width: 35%;
+}
+.cont_fullvid iframe{
+    width: 100%;
+}
+.cont_txt{
+	float: left;
+	padding: 10px;
+	width: 60%;
+}
+.toiletemoji{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    top: 11px;
+    left: 3%;
+}
+.content_bdy{
+    padding-top:15px;
+    position:relative; 
+    margin-left:5%;
+    margin-right:5%;
+    height: auto;
+}
+.bdytxt_left{
+    float:left;
+    width: 25%;
+    padding-top: 5px;
+    position: relative;
+}
+.bdytxt_right{
+    margin-left: 15px;
+    float: left;
+    width: 72%;
+    position: relative;
+}
+.content_bdy li{
+    margin-bottom: 15px;
+}
+.bdysubtxt{
+    color: DimGray;
+    font-size: 20px;
+}
+.clearfloat{
+    clear: both;
+}
+.sub_heading{
+	line-height: 2.75;
+}
+.sub_header{
+    text-align: center;
+}
+.cont_column{
+	float: left;
+	width: 47%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.sub_fig{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.sub_fig img{
+      width: 100%;
+}
+hr {
+	margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: auto;
+    max-width: 1280px;
+}
+iframe{
+    border: 0;
+}
+footer{
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width: 350px;
+    max-width: 1920px;
+    text-align: center;
+    margin-top: 50px;
+}
+@media(max-width:940px){
+    .bdytxt_left{
+        float:none;
+        width: 99%;
+        padding-top: 5px;
+        position: relative;
+    }
+    .bdytxt_right{
+        margin-left: 0px;
+        float: none;
+        width: 99%;
+        position: relative;
+    }
+    .head_text_right{
+        visibility: hidden;
+    }
+    .header h2{
+        visibility: hidden;
+    }
+    .toiletemoji{
+        visibility: visible;
+    }
+}
